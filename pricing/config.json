@@ -1,0 +1,21 @@
+{
+    "section": {
+        "titulo": "Select the ideal plan for you",
+        "parrafo": [
+            {
+                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+                "texto": "Watch all you want. Ad-free."
+            },
+            {
+                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+                "texto": "Recommendations just for you."
+            },
+            {
+                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+                "texto": "Change or cancel your plan anytime."
+            }
+
+        ]
+
+    }
+}
