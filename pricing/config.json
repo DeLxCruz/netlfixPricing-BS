@@ -17,5 +17,22 @@
 
         ]
 
-    }
+    },
+    "cardSection": [
+        {
+            "tipo": "Basic",
+            "precio": "$4,13",
+            "beneficios": ["10 users included", "2 GB of storage", "Email support", "Help center access"]
+        },
+        {
+            "tipo": "Standard",
+            "precio": "$6,58",
+            "beneficios": ["20 users included", "10 GB of storage", "Priority email support", "Help center access"]
+        },
+        {
+            "tipo": "Premium",
+            "precio": "$9,52",
+            "beneficios": ["30 users included", "15 GB of storage", "Phone and email support", "Help center access"]
+        }
+    ]
 }
