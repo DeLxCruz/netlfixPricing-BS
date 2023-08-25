@@ -87,6 +87,14 @@ let obtener = async () => {
         </div>
         `
     );
+
+    let textSectionTable = document.querySelector('#textSectionTable')
+    textSectionTable.insertAdjacentHTML('beforeend', 
+        /*html*/`
+            <p class="link-secondary">
+                ${res.textSectionTable}
+            </p>
+    `)
 };
 
 obtener();
