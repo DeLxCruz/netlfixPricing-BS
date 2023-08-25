@@ -1,52 +1,68 @@
 {
-    "section": {
-        "titulo": "Select the ideal plan for you",
-        "parrafo": [
-            {
-                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
-                "texto": "Watch all you want. Ad-free."
-            },
-            {
-                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
-                "texto": "Recommendations just for you."
-            },
-            {
-                "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
-                "texto": "Change or cancel your plan anytime."
-            }
-
-        ]
-
+  "section": {
+    "titulo": "Select the ideal plan for you",
+    "parrafo": [
+      {
+        "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+        "texto": "Watch all you want. Ad-free."
+      },
+      {
+        "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+        "texto": "Recommendations just for you."
+      },
+      {
+        "icono": "<svg class='bi text-danger me-2' width='24' height='24'><use xlink:href='#check' /></svg>",
+        "texto": "Change or cancel your plan anytime."
+      }
+    ]
+  },
+  "cardSection": [
+    {
+      "tipo": "Basic",
+      "precio": "$4,13",
+      "beneficios": [
+        "10 users included",
+        "2 GB of storage",
+        "Email support",
+        "Help center access"
+      ]
     },
-    "cardSection": [
-        {
-            "tipo": "Basic",
-            "precio": "$4,13",
-            "beneficios": ["10 users included", "2 GB of storage", "Email support", "Help center access"]
-        },
-        {
-            "tipo": "Standard",
-            "precio": "$6,58",
-            "beneficios": ["20 users included", "10 GB of storage", "Priority email support", "Help center access"]
-        },
-        {
-            "tipo": "Premium",
-            "precio": "$9,52",
-            "beneficios": ["30 users included", "15 GB of storage", "Phone and email support", "Help center access"]
-        }
-    ],
-    "textSectionTable": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href=''>Terms of Use</a> for more details.<br><br>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
-    "footer": {
-        "footerCopyright": {
-            "img":"../assets/brand/Netflix_2015_N_logo.svg.png",
-            "text": "&copy; Campuslands 2023 Bucaramanga"
-        },
-        "footer-links": [
-            ["FAQ","Privacy"],
-            ["Help Center","Cookie Preferences"],
-            ["Netflix Shop","Corporate Information"],
-            ["Terms of Use"]
-        ]
+    {
+      "tipo": "Standard",
+      "precio": "$6,58",
+      "beneficios": [
+        "20 users included",
+        "10 GB of storage",
+        "Priority email support",
+        "Help center access"
+      ]
+    },
+    {
+      "tipo": "Premium",
+      "precio": "$9,52",
+      "beneficios": [
+        "30 users included",
+        "15 GB of storage",
+        "Phone and email support",
+        "Help center access"
+      ]
     }
-
+  ],
+  "textSectionTable": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href=''>Terms of Use</a> for more details.<br><br>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
+  "footer": [
+    {
+      "footerCopyright": {
+        "img": "../assets/brand/Netflix_2015_N_logo.svg.png",
+        "text": "&copy; Campuslands 2023 Bucaramanga"
+      }
+    },
+    {
+      "footerLinks": [
+        ["FAQ", "Privacy"],
+        ["Help Center", "Cookie Preferences"],
+        ["Netflix Shop", "Corporate Information"],
+        ["Terms of Use"]
+      ]
+    }
+  ]
 }
