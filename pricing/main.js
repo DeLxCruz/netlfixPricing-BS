@@ -35,13 +35,53 @@ let obtener = async () => {
                 <div class="card-body">
                     <h1 class="card-title pricing-card-title">${res.cardSection[0].precio}<small class="text-body-secondary fw-light">/mo</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                        ${res.cardSection[0].beneficios.forEach(
-                            (element) => {
-                                const li = document.createElement('li')
-                                li.textContent = element
-                                console.log(element)
-                            })}
+                        ${res.cardSection[0].beneficios.map(
+                            (element) => /*html*/ `
+                                <li>${element}</li>
+                            `
+                            ).join("")}
                     </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">
+                    ${res.cardSection[1].tipo}
+                </h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">${res.cardSection[1].precio}<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    ${res.cardSection[1].beneficios.map(
+                        (element) => /*html*/ `
+                            <li>${element}</li>
+                        `
+                        ).join("")}
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Next</button>
+            </div>
+        </div>
+    </div>
+            <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">
+                        ${res.cardSection[2].tipo}
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">${res.cardSection[2].precio}<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        ${res.cardSection[2].beneficios.map(
+                            (element) => /*html*/ `
+                                <li>${element}</li>
+                            `
+                            ).join("")}
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Next</button>
                 </div>
             </div>
         </div>
