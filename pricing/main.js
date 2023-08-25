@@ -23,10 +23,12 @@ let obtener = async () => {
     `
   );
   let cardSelection = document.querySelector("#cardJSONSection");
-  cardSelection.insertAdjacentHTML("beforeend",
+  cardSelection.insertAdjacentHTML(
+    "beforeend",
     /*html*/ `
-    ${res.cardSection.map((value) => 
-        /*html*/ `
+    ${res.cardSection
+      .map(
+        (value) => /*html*/ `
         <div class="col">
         <div class="card mb-4 rounded-0 shadow-sm">
             <div class="card-header py-3">
@@ -35,10 +37,12 @@ let obtener = async () => {
                 </h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title">${value.precio
+                <h1 class="card-title pricing-card-title">${
+                  value.precio
                 }<small class="text-body-secondary fw-light">/mo</small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                    ${value.beneficios.map(
+                    ${value.beneficios
+                      .map(
                         (element) => /*html*/ `
                             <li>${element}</li>
                         `
@@ -48,9 +52,11 @@ let obtener = async () => {
                 <button type="button" class="w-100 btn btn-lg btn-outline-primary">Next</button>
             </div>
         </div>
-    </div>`).join("")}
+    </div>`
+      )
+      .join("")}
         `
-  )
+  );
 
   let textSectionTable = document.querySelector("#textSectionTable");
   textSectionTable.insertAdjacentHTML(
@@ -64,5 +70,3 @@ let obtener = async () => {
 };
 
 obtener();
-
-

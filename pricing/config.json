@@ -35,5 +35,18 @@
             "beneficios": ["30 users included", "15 GB of storage", "Phone and email support", "Help center access"]
         }
     ],
-    "textSectionTable": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href=''>Terms of Use</a> for more details.<br><br>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic."
+    "textSectionTable": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href=''>Terms of Use</a> for more details.<br><br>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
+    "footer": {
+        "footerCopyright": {
+            "img":"../assets/brand/Netflix_2015_N_logo.svg.png",
+            "text": "&copy; Campuslands 2023 Bucaramanga"
+        },
+        "footer-links": [
+            ["FAQ","Privacy"],
+            ["Help Center","Cookie Preferences"],
+            ["Netflix Shop","Corporate Information"],
+            ["Terms of Use"]
+        ]
+    }
+
 }
