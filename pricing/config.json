@@ -51,9 +51,9 @@
   "table":{
     "titulo":"Compare plans",
     "head":[
-        {"text":"Free"},
-        {"text":"Pro"},
-        {"text":"Enterprise"}
+        {"text":"Basic"},
+        {"text":"Standard"},
+        {"text":"Premium"}
     ],
     "body":[
         {
