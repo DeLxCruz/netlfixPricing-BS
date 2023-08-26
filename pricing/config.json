@@ -48,7 +48,36 @@
       ]
     }
   ],
+  "table":{
+    "titulo":"Compare plans",
+    "head":[
+        {"text":"Free"},
+        {"text":"Pro"},
+        {"text":"Enterprise"}
+    ],
+    "body":[
+        {
+            "titulo2":"Video Quality",
+            "feature1":"Good",
+            "feature2":"Better",
+            "feature3":"Best"
+        },
+        {
+            "titulo2":"Resolution",
+            "feature1":"720p",
+            "feature2":"1080p",
+            "feature3":"4K+HDR"
+        }
+    ],
+    "titulo3":"Watch on your TV, computer, mobile phone and tablet",
+    "check":[
+        {"okay":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"},
+        {"okay":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"},
+        {"okay":"<svg class='bi' width='24' height='24'> <use xlink:href='#check'/></svg>"}
+    ]
+  },
   "textSectionTable": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href=''>Terms of Use</a> for more details.<br><br>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
+  
   "footer": [
     {
       "footerCopyright": {

@@ -4,9 +4,7 @@ let obtener = async () => {
     let peticion = await fetch(`${path}.json`);
     let res = await peticion.json();
     let seleccion = document.querySelector("#myJSONSection");
-    seleccion.insertAdjacentHTML(
-        "beforeEnd",
-    /*html*/ `
+    seleccion.insertAdjacentHTML("beforeEnd",/*html*/ `
         <h1 class="display-6 fw-normal text-body-emphasis mb-4">${res.section.titulo
         }</h1>
         <div class="fs-5 text-body-secondary">
@@ -22,9 +20,7 @@ let obtener = async () => {
     `
     );
     let cardSelection = document.querySelector("#cardJSONSection");
-    cardSelection.insertAdjacentHTML(
-        "beforeend",
-    /*html*/ `
+    cardSelection.insertAdjacentHTML("beforeend",/*html*/ `
     ${res.cardSection
             .map(
                 (value) => /*html*/ `
@@ -51,24 +47,47 @@ let obtener = async () => {
             </div>
         </div>
     </div>`
-            )
-            .join("")}
-        `
-    );
+            ).join("")}
+    `);
 
     let textSectionTable = document.querySelector("#textSectionTable");
-    textSectionTable.insertAdjacentHTML(
-        "beforeend",
-    /*html*/ `
-            <p class="link-secondary">
-                ${res.textSectionTable}
-            </p>
-    `
-    );
+    textSectionTable.insertAdjacentHTML("beforeend", /*html*/ `
+    <h2 class="display-6 text-center mb-4">${res.table.titulo}</h2>
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th style="width: 34%;"></th>
+          ${res.table.head.map((value) => /*HTML*/`
+            <th style="width: 22%;">${value.text}</th>
+          `).join("")}
+        </tr>
+      </thead>
+      <tbody>
+        ${res.table.body.map((valores) => /*HTML*/`
+        <tr>
+          <th scope="row" class="text-start">${valores.titulo2}</th>
+          <td>${valores.feature1}</td>
+          <td>${valores.feature2}</td>
+          <td>${valores.feature3}</td>
+        </tr>
+        `)}
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-start">${res.table.titulo3}</th>
+          ${res.table.check.map((valor3) => /*HTML*/ `
+            <td>${valor3.okay}</td>
+          `).join("")}
+        </tr>
+      </tbody>
+    </table>
+    <p class="link-secondary">
+        ${res.textSectionTable}
+    </p>
+    `);
 
     let divFooter = document.querySelector("#divFooter");
-    divFooter.insertAdjacentHTML("beforeend",
-    /*html*/ `
+    divFooter.insertAdjacentHTML("beforeend", /*html*/ `
         <div class="col-12 col-md">
             <img class="mb-2" src="${res.footer[0].footerCopyright.img}" alt="" width="24" height="38">
             <small class="d-block mb-3 text-body-secondary">${res.footer[0].footerCopyright.text}</small>
@@ -82,9 +101,7 @@ let obtener = async () => {
                 </ul>
             </div>
         `).join("")}
-    `
-    )
-
+    `)
 };
 
 obtener();
